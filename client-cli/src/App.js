@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-
+import {Card, Container,Row, Col, Button, Form, Nav} from 'react-bootstrap';
+import {Register} from './components/Register';
+import {Login} from './components/Login';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Nav fill variant="tabs" defaultActiveKey="/home">
+      <Nav.Item>
+        <Nav.Link href="/home">Active</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link eventKey="link-1">Loooonger NavLink</Nav.Link>
+      </Nav.Item>
+    </Nav>
     </div>
   );
 }
