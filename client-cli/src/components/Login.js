@@ -1,19 +1,48 @@
-import React from 'react'
+import React, { useState,useRef } from 'react'
 import {Card, Container,Row, Col, Button, Form} from 'react-bootstrap';
+import {Link} from 'react-router-dom'; 
+import '../App.css';
+
+const axios = require('axios').default;
 
 export const Login = () => {
+  const [username, setusername] = useState('');
+  const [password, setpassword] = useState('');
+
+  const submitHandler =(e)=>{
+    e.preventDefault();
+    console.log(username,password);
+    // axios.post('http://localhost:4000/register', {
+    //   "username":username,
+    //   "password":password
+    // })
+    // .then(function (response) {
+    //   console.log(response.data);
+    // })
+    // .catch(function (error) {
+    //   console.log(error);
+    // });
+  }
+
   return (
-    <div>
-        <Card>
-        <Card.Header>Login</Card.Header>
+    <>
+    <div className="App">
+      <Card >
+        <Card.Header>Login/<Link to="/">Home</Link></Card.Header>
         <Card.Body>
-            <Card.Title>Special title treatment</Card.Title>
-            <Card.Text>
-            With supporting text below as a natural lead-in to additional content.
-            </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+        <Form onSubmit={submitHandler}>
+          <Form.Group className="mb-3">
+            <Form.Control value ={username} onChange={e=>{setusername(e.target.value)}} type="text" placeholder="Enter Username" />
+          </Form.Group>
+          <Form.Group className="mb-3">
+            <Form.Control value ={password} onChange={e=>{setpassword(e.target.value)}} type="password" placeholder="Password" />
+          </Form.Group>
+    
+          <Button variant="outline-dark" type="submit">Submit</Button>
+        </Form>
         </Card.Body>
-        </Card>
+      </Card>
     </div>
+    </>
   )
 }

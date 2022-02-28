@@ -8,7 +8,7 @@
 
 const { Contract } = require('fabric-contract-api');
 
-class FabCar extends Contract {
+class fabCar extends Contract {
 
     async initLedger(ctx) {
         console.info('============= START : Initialize Ledger ===========');
@@ -139,7 +139,6 @@ class FabCar extends Contract {
         await ctx.stub.putState(carNumber, Buffer.from(JSON.stringify(car)));
         console.info('============= END : changeCarOwner ===========');
     }
-
 }
 
-module.exports = FabCar;
+module.exports = fabCar;

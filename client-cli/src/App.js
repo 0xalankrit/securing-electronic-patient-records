@@ -2,17 +2,19 @@ import './App.css';
 import {Card, Container,Row, Col, Button, Form, Nav} from 'react-bootstrap';
 import {Register} from './components/Register';
 import {Login} from './components/Login';
+import {Home} from './components/Home';
+import { useState,useEffect } from 'react';
+
+import { Routes, Route } from "react-router-dom"
+
 function App() {
   return (
     <div className="App">
-    <Nav fill variant="tabs" defaultActiveKey="/home">
-      <Nav.Item>
-        <Nav.Link href="/home">Active</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link eventKey="link-1">Loooonger NavLink</Nav.Link>
-      </Nav.Item>
-    </Nav>
+      <Routes>
+        <Route path="login" element={  <Login/> } />
+        <Route path="register" element={ <Register/> } />
+        <Route path="/" element={ <Home/> } />
+      </Routes>
     </div>
   );
 }

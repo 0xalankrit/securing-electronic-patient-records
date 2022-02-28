@@ -50,7 +50,7 @@ CC_RUNTIME_LANGUAGE="node"
 VERSION="1"
 SEQUENCE="1"
 CC_SRC_PATH="./artifacts/chaincode"
-CC_NAME="favcar"
+CC_NAME="fabcar"
 
 packageChaincode() {
     rm -rf ${CC_NAME}.tar.gz
@@ -257,28 +257,28 @@ chaincodeQuery() {
 
 # Run this function if you add any new dependency in chaincode
 
-# packageChaincode
-# sleep 3
-# installChaincode
-# sleep 3
-# queryInstalled
-# sleep 3
-# approveForMyOrg1
-# sleep 3
-# approveForMyOrg2
-# sleep 3
-# approveForMyOrg3
-# sleep 3
-# checkCommitReadyness
-# sleep 3
-# commitChaincodeDefination
-# sleep 3
-# queryCommitted
-# sleep 3
+packageChaincode
+sleep 3
+installChaincode
+sleep 3
+queryInstalled
+sleep 3
+approveForMyOrg1
+sleep 3
+approveForMyOrg2
+sleep 3
+approveForMyOrg3
+sleep 3
+checkCommitReadyness
+sleep 3
+commitChaincodeDefination
+sleep 3
+queryCommitted
+sleep 3
 
-# chaincodeInvokeInit
-# sleep 3
-# chaincodeInvoke
+chaincodeInvokeInit
+sleep 3
+chaincodeInvoke
 
 # sleep 3
 # chaincodeQuery
