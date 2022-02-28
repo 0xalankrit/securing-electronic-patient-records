@@ -50,7 +50,7 @@ CC_RUNTIME_LANGUAGE="node"
 VERSION="1"
 SEQUENCE="1"
 CC_SRC_PATH="./artifacts/chaincode"
-CC_NAME="fabcar"
+CC_NAME="PrimaryContract"
 
 packageChaincode() {
     rm -rf ${CC_NAME}.tar.gz
@@ -278,7 +278,7 @@ sleep 3
 
 chaincodeInvokeInit
 sleep 3
-chaincodeInvoke
+# chaincodeInvoke
 
 # sleep 3
 # chaincodeQuery
