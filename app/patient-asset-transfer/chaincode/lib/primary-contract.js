@@ -1,10 +1,4 @@
-/**
- * @author Varsha Kamath
- * @email varsha.kamath@stud.fra-uas.de
- * @create date 2021-01-23 21:50:38
- * @modify date 2021-01-30 19:52:41
- * @desc [Primary Smartcontract to initiate ledger with patient details]
- */
+
 /*
  * SPDX-License-Identifier: Apache-2.0
  */

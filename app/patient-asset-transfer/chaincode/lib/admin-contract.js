@@ -1,10 +1,4 @@
-/**
- * @author Varsha Kamath
- * @email varsha.kamath@stud.fra-uas.de
- * @create date 2021-01-23 21:50:38
- * @modify date 2021-01-26 13:30:00
- * @desc [Admin Smartcontract to create, read patient details in legder]
- */
+
 /*
  * SPDX-License-Identifier: Apache-2.0
  */

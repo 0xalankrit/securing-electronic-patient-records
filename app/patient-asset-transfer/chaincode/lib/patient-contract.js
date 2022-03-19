@@ -1,10 +1,4 @@
-/**
- * @author Varsha Kamath
- * @email varsha.kamath@stud.fra-uas.de
- * @create date 2020-12-14 21:50:38
- * @modify date 2021-02-05 20:15:21
- * @desc [Patient Smartcontract to read, update and delete patient details in legder]
- */
+
 /*
  * SPDX-License-Identifier: Apache-2.0
  */
